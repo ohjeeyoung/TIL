@@ -2,13 +2,15 @@
 
 Hypothesis and Cost
 
-H(x) = Wx+ b
+![CodeCogsEqn (5)](https://user-images.githubusercontent.com/62995632/93719093-662e7c00-fbbb-11ea-9805-6a5063589840.gif)
+
 ![CodeCogsEqn](https://user-images.githubusercontent.com/62995632/93712521-5bf78800-fb91-11ea-8897-2533e31787c4.gif)
 
 
 Simplified hypothesis
 
-H(x) = Wx
+![CodeCogsEqn (6)](https://user-images.githubusercontent.com/62995632/93719105-73e40180-fbbb-11ea-945d-3491a7f98730.gif)
+
 ![CodeCogsEqn (1)](https://user-images.githubusercontent.com/62995632/93718554-27e38d80-fbb8-11ea-8bb2-b2e05e19d00b.gif)
 
 
@@ -31,6 +33,7 @@ How it works
 
 -> Where you start can determine which minimum you end up
 
+
 Formal definition
 
 ![CodeCogsEqn (1)](https://user-images.githubusercontent.com/62995632/93718554-27e38d80-fbb8-11ea-8bb2-b2e05e19d00b.gif)
@@ -38,3 +41,8 @@ Formal definition
 
 ![CodeCogsEqn (3)](https://user-images.githubusercontent.com/62995632/93718981-9de8f400-fbba-11ea-8c89-c2af5eaa2420.gif)
 -> ![CodeCogsEqn (4)](https://user-images.githubusercontent.com/62995632/93719055-22d40d80-fbbb-11ea-8637-aab83e66f35f.gif)
+
+
+Convex function
+
+check cost function is convex -> then we can get the result
