@@ -38,7 +38,8 @@ optimizer = tf.train.GradientDescentOptimizer(learning_rate=0.01)
 train = optimizer.minimize(cost)
 ```
 
-2. Run/update graph and get results
+2. Run/update graph (operation)
+-> sess.run(op, feed_dict={x: x_data})
 
 ```python
 # Launch the graph in a session
@@ -53,6 +54,8 @@ for step in range(2001):
   if step % 20 == 0:
     print(step, sess.run(cost), sess.run(W), sess.run(b))
 ```
+
+3. update variables in the graph(and return values)
 
 #### Placeholder
 처음에 선언하지 않아도 학습하고 싶은 데이터를 후에 던져줄 수 있음
