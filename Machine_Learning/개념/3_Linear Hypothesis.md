@@ -6,6 +6,9 @@
 #### Cost function(Loss function)
 - how fit the line to our (training) data
 distance is always positive number or 0
+
+H(x) - y 로 정의할 때는 음수값이 될 수도 있으므로 제곱값을 주로 사용
+
 (H(x) - y)^2
 
 
@@ -16,3 +19,5 @@ distance is always positive number or 0
 #### Goal: Minimize cost
 
 minimize cost(W,b)
+
+최소가 되게 하는 W와 b의 값을 구하는 것이 목표
