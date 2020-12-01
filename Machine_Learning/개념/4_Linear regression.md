@@ -54,7 +54,8 @@ for step in range(2001):
     print(step, sess.run(cost), sess.run(W), sess.run(b))
 ```
 
-#### Placeholders
+#### Placeholder
+처음에 선언하지 않아도 학습하고 싶은 데이터를 후에 던져줄 수 있음
 ```python
 X = tf.placeholder(tf.float32)
 Y = tf.placeholder(tf.float32)
