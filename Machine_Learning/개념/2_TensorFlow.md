@@ -30,6 +30,7 @@ node3 = tf.add(node1, node2)
 2. feed data and run graph(operation) 
 
 -> sess.run(op), sess.run(op, feed_dict={x:x_data})
+
 3. update variables in the graph(and return values)
 ```python
 sess = tf.Session()
