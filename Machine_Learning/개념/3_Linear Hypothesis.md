@@ -1,4 +1,4 @@
-## (Linear) Hypothesis
+## (Linear) Hypothesis 가설
 
 ![CodeCogsEqn (5)](https://user-images.githubusercontent.com/62995632/93719366-151f8780-fbbd-11ea-9716-1a6b00b535b6.gif)
 
