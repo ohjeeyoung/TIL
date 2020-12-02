@@ -4,7 +4,7 @@ Linear regression을 설계하기 위해 필요한 3가지
 1. Hypothesis(가설): H(x) = Wx + b
 2. Cost/Loss funcion
 3. Gradient descent algorithm(경사하강 알고리즘)
----------------------------
+
 
 ### Predicting exam score
 : regression using one input(x) vs regression using three inputs(x1, x2, x3)
@@ -28,7 +28,7 @@ Linear regression을 설계하기 위해 필요한 3가지
 
 -> Matrix를 이용
 
----------------------------
+
 ## Matrix multiplication
 
 ### Hypothesis using matrix
