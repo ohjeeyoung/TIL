@@ -6,7 +6,7 @@ Linear regression을 설계하기 위해 필요한 3가지
 3. Gradient descent algorithm(경사하강 알고리즘)
 
 
-### Predicting exam score
+## Predicting exam score
 : regression using one input(x) vs regression using three inputs(x1, x2, x3)
 
 ### Hypothesis
