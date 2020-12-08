@@ -16,8 +16,6 @@ A, B, C 이렇게 3개로 분류가 될 때
 
 <img width="1000" alt="스크린샷 2020-12-09 오전 1 54 34" src="https://user-images.githubusercontent.com/62995632/101515277-8521fa80-39c1-11eb-8ab1-c299d812f6d6.png">
 
-<img width="1440" alt="스크린샷 2020-12-09 오전 1 54 34" src="https://user-images.githubusercontent.com/62995632/101515277-8521fa80-39c1-11eb-8ab1-c299d812f6d6.png">
-
 A or not, B or not, C or not 처럼 binary classification을 이용해 구현할 수 있음
 
 X가 주어졌을 때 위의 결과로 Y를 예측할 수 있음
