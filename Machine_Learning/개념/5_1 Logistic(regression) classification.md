@@ -51,5 +51,5 @@ H(x) = Wx + b
 z = Wx
 
 H(x) = g(z)
-
+ 
 ![daum_equation_1607428000665](https://user-images.githubusercontent.com/62995632/101480064-7f62ef80-3996-11eb-8740-d4a4c1597ceb.png)
