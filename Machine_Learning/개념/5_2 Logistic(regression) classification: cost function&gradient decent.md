@@ -26,6 +26,7 @@ H(x)를 바꿨기 때문에 cost 함수도 바꿔야한다.
 ![daum_equation_1607432045740](https://user-images.githubusercontent.com/62995632/101486399-ee911180-399f-11eb-9926-e567b9fc6a6e.png)
 
 <img width="1439" alt="스크린샷 2020-12-08 오후 10 06 20" src="https://user-images.githubusercontent.com/62995632/101487569-b8ed2800-39a1-11eb-91a9-c4fe39f088b9.png">
+
 - y:1 일때 예측이 틀릴경우 즉 H(x) = 0이면 cost 는 무한대가 된다. 
 
 - y:0 일때 H(x) =0 이면 cost는 0이되고, H(x) = 1 이면 cost는 무한대가 된다. 
