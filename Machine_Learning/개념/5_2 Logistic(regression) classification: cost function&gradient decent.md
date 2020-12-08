@@ -3,9 +3,10 @@
 ![CodeCogsEqn](https://user-images.githubusercontent.com/62995632/93712521-5bf78800-fb91-11ea-8897-2533e31787c4.gif)
 
 when 
+
 ![CodeCogsEqn (5)](https://user-images.githubusercontent.com/62995632/93719093-662e7c00-fbbb-11ea-9805-6a5063589840.gif)
 
-<img width="631" alt="스크린샷 2020-12-08 오후 8 51 03" src="https://user-images.githubusercontent.com/62995632/101480489-1c258d00-3997-11eb-8d01-8b627601d00e.png">
+<img width="300" alt="스크린샷 2020-12-08 오후 8 51 03" src="https://user-images.githubusercontent.com/62995632/101480489-1c258d00-3997-11eb-8d01-8b627601d00e.png">
 
 
 #### Cost function
