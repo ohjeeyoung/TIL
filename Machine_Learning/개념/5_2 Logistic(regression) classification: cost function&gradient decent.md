@@ -22,6 +22,7 @@ when
 H(x)를 바꿨기 때문에 cost 함수도 바꿔야한다.
 
 ![daum_equation_1607431904071](https://user-images.githubusercontent.com/62995632/101486393-ecc74e00-399f-11eb-8585-71bcecab5f64.png)
+
 ![daum_equation_1607432045740](https://user-images.githubusercontent.com/62995632/101486399-ee911180-399f-11eb-9926-e567b9fc6a6e.png)
 
 <img width="1439" alt="스크린샷 2020-12-08 오후 10 06 20" src="https://user-images.githubusercontent.com/62995632/101487569-b8ed2800-39a1-11eb-91a9-c4fe39f088b9.png">
@@ -34,5 +35,23 @@ H(x)를 바꿨기 때문에 cost 함수도 바꿔야한다.
 ## Cost function
 
 ![daum_equation_1607431904071](https://user-images.githubusercontent.com/62995632/101486393-ecc74e00-399f-11eb-8585-71bcecab5f64.png)
+
 ![daum_equation_1607432045740](https://user-images.githubusercontent.com/62995632/101486399-ee911180-399f-11eb-9926-e567b9fc6a6e.png)
+
 ![daum_equation_1607432983554](https://user-images.githubusercontent.com/62995632/101487863-1b462880-39a2-11eb-8b0e-02a0eb3f7bed.png)
+
+## Minimize cost - Gradient decent algorithm
+
+![daum_equation_1607441596611](https://user-images.githubusercontent.com/62995632/101504083-2905a900-39b6-11eb-84e8-8613e1bae60b.png)
+
+![CodeCogsEqn (3)](https://user-images.githubusercontent.com/62995632/93718981-9de8f400-fbba-11ea-8c89-c2af5eaa2420.gif)
+
+```python
+# cost function
+cost = tf.reduce_mean(-tf.reduce_sum(Y*tf.log(hypothesis) + (1-Y)*tf.log(1-hypothesis)))
+
+# Minimize
+a = tf.Variable(0.1)  # Learning rate, alpha
+optimizer = tf.train.GradientDescentOptimizer(a)
+train = optimizer.minimize(cost)
+```
