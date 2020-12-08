@@ -29,7 +29,7 @@ X가 주어졌을 때 위의 결과로 Y를 예측할 수 있음
 
 -> W를 하나로 합쳐서 행렬곱셈
 
-<img width="1000" alt="스크린샷 2020-12-09 오전 1 58 13" src="https://user-images.githubusercontent.com/62995632/101515975-480a3800-39c2-11eb-8718-c6cb11b7227d.png">
+<img width="1000" alt="스크린샷 2020-12-09 오전 2 00 08" src="https://user-images.githubusercontent.com/62995632/101516229-915a8780-39c2-11eb-8526-9ca53976d858.png">
 
 마지막 값이 우리가 구하려고 했던 가설 H(X)
 
