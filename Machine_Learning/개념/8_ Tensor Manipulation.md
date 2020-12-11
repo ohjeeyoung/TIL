@@ -62,21 +62,23 @@ print("Matrix 2 shape", matrix2.shape)
 tf.matmul(matrix1, matrix2).eval()
 ```
 
-결과: Matrix 1 shape (2, 2)
+결과
+Matrix 1 shape (2, 2)
 
-     Matrix 2 shape (2, 1)
+Matrix 2 shape (2, 1)
      
-     array([[ 5.],
-     
-            [ 11.]], dtype=float32)
+array([[ 5.],
+      [ 11.]], dtype=float32)
 
 ```python
 (matrix1 * matrix2).eval()
 ```
 
-결과: array([[  1., 2.],
+결과
 
-            [  6., 8.]], dtype=float32)
+array([[  1., 2.],
+
+[  6., 8.]], dtype=float32)
             
 일반곱셈과 행렬곱셈은 그 결과가 다르다
 
@@ -216,25 +218,29 @@ t.shape
 tf.reshape(t, shape=[-1, 3]).eval()
 ```
 
-결과: array([[0, 1, 2],
+결과
 
-            [3, 4, 5],
+array([[0, 1, 2],
+
+[3, 4, 5],
+
+[6, 7, 8],
             
-            [6, 7, 8],
-            
-            [9, 10, 11]])
+[9, 10, 11]])
 
 ```python
 tf.reshape(t, shape=[-1, 1, 3]).eval()
 ```
 
-결과: array([[[0, 1, 2]],
+결과
 
-            [[3, 4, 5]],
+array([[[0, 1, 2]],
+
+[[3, 4, 5]],
             
-            [[6, 7, 8]],
+[[6, 7, 8]],
             
-            [[9, 10, 11]]])
+[[9, 10, 11]]])
             
 ## Reshape(squeeze, expand)
 
@@ -252,11 +258,13 @@ tf.expand_dims([0, 1, 2], 1).eval()
 
 dimension을 추가하고 싶을 때 expand를 써서 얼마나 expand하고 싶은지 입력
 
-결과: array([[0],
+결과
 
-            [1],
+array([[0],
+
+[1],
             
-            [2]], dtype=int32)
+[2]], dtype=int32)
             
             
 ## One hot
@@ -272,24 +280,28 @@ tf.one_hot([[0], [1], [2], [0]], depth=3).eval()
 
 자동으로 rank를 expand함
 
-결과: array([[[1., 0., 0.]],
+결과
 
-            [[0., 1., 0.]],
+array([[[1., 0., 0.]],
+
+[[0., 1., 0.]],
             
-            [[1., 0., 0.]]], dtype=float32)
+[[1., 0., 0.]]], dtype=float32)
             
 ```python
 t = tf.one_hot([[0], [1], [2], [0]], depth=3)
 tf.reshape(t, shape=[-1, 3]).eval()
 ```
 
-결과: array([[[1., 0., 0.]],
+결과
 
-            [[0., 1., 0.]],
+array([[[1., 0., 0.]],
+
+[[0., 1., 0.]],
             
-            [[0., 0., 1.]],
+[[0., 0., 1.]],
             
-            [[1., 0., 0.]]], dtype=float32)
+[[1., 0., 0.]]], dtype=float32)
           
           
 ## Casting
@@ -320,19 +332,23 @@ z = [3, 6]
 tf.stack([x, y, z]).eval()
 ```
 
-결과: array([[1, 4],
+결과
 
-            [2, 5],
+array([[1, 4],
+
+[2, 5],
             
-            [3, 6]], dtype=int32)
+[3, 6]], dtype=int32)
             
 ```python
 tf.stack([x, y, z], axis=1).eval()
 ```
 
-결과: array([[1, 2, 3],
+결과
 
-            [4, 5, 6]], dtype=int32)
+array([[1, 2, 3],
+
+[4, 5, 6]], dtype=int32)
             
 ## Ones and Zeros like
 
@@ -344,17 +360,21 @@ x = [[0, 1, 2],
 tf.ones_like(x).eval()   # 같은 shape에 1로 채워짐
 ```
 
-결과: array([[1, 1, 1],
+결과
 
-            [1, 1, 1]], dtype=int32)
+array([[1, 1, 1],
+
+[1, 1, 1]], dtype=int32)
             
 ```python
 tf.zeros_like(x).eval()   # 같은 shape에 0으로 채워짐
 ```
 
-결과: array([[0, 0, 0],
+결과
 
-            [0, 0, 0]], dtype=int32)
+array([[0, 0, 0],
+
+[0, 0, 0]], dtype=int32)
             
 ## Zip
 
@@ -363,19 +383,22 @@ for x, y in zip([1, 2, 3], [4, 5, 6]):
      print(x, y)
 ```
 
-결과: 1 4
+결과
+1 4
 
-     2 5
+2 5
      
-     3 6
+3 6
      
 ```python
 for x, y, z in zip([1, 2, 3], [4, 5, 6], [7, 8, 9]):
      print(x, y, z)
 ```
 
-결과: 1 4 7
+결과
 
-     2 5 8
+1 4 7
+
+2 5 8
      
-     3 6 9
+3 6 9
