@@ -67,6 +67,7 @@ tf.matmul(matrix1, matrix2).eval()
      Matrix 2 shape (2, 1)
      
      array([[ 5.],
+     
             [ 11.]], dtype=float32)
 
 ```python
@@ -74,6 +75,7 @@ tf.matmul(matrix1, matrix2).eval()
 ```
 
 결과: array([[  1., 2.],
+
             [  6., 8.]], dtype=float32)
             
 일반곱셈과 행렬곱셈은 그 결과가 다르다
@@ -215,8 +217,11 @@ tf.reshape(t, shape=[-1, 3]).eval()
 ```
 
 결과: array([[0, 1, 2],
+
             [3, 4, 5],
+            
             [6, 7, 8],
+            
             [9, 10, 11]])
 
 ```python
@@ -224,8 +229,11 @@ tf.reshape(t, shape=[-1, 1, 3]).eval()
 ```
 
 결과: array([[[0, 1, 2]],
+
             [[3, 4, 5]],
+            
             [[6, 7, 8]],
+            
             [[9, 10, 11]]])
             
 ## Reshape(squeeze, expand)
@@ -245,7 +253,9 @@ tf.expand_dims([0, 1, 2], 1).eval()
 dimension을 추가하고 싶을 때 expand를 써서 얼마나 expand하고 싶은지 입력
 
 결과: array([[0],
+
             [1],
+            
             [2]], dtype=int32)
             
             
@@ -263,7 +273,9 @@ tf.one_hot([[0], [1], [2], [0]], depth=3).eval()
 자동으로 rank를 expand함
 
 결과: array([[[1., 0., 0.]],
+
             [[0., 1., 0.]],
+            
             [[1., 0., 0.]]], dtype=float32)
             
 ```python
@@ -272,8 +284,11 @@ tf.reshape(t, shape=[-1, 3]).eval()
 ```
 
 결과: array([[[1., 0., 0.]],
+
             [[0., 1., 0.]],
+            
             [[0., 0., 1.]],
+            
             [[1., 0., 0.]]], dtype=float32)
           
           
@@ -306,7 +321,9 @@ tf.stack([x, y, z]).eval()
 ```
 
 결과: array([[1, 4],
+
             [2, 5],
+            
             [3, 6]], dtype=int32)
             
 ```python
@@ -314,6 +331,7 @@ tf.stack([x, y, z], axis=1).eval()
 ```
 
 결과: array([[1, 2, 3],
+
             [4, 5, 6]], dtype=int32)
             
 ## Ones and Zeros like
@@ -327,6 +345,7 @@ tf.ones_like(x).eval()   # 같은 shape에 1로 채워짐
 ```
 
 결과: array([[1, 1, 1],
+
             [1, 1, 1]], dtype=int32)
             
 ```python
@@ -334,6 +353,7 @@ tf.zeros_like(x).eval()   # 같은 shape에 0으로 채워짐
 ```
 
 결과: array([[0, 0, 0],
+
             [0, 0, 0]], dtype=int32)
             
 ## Zip
@@ -344,7 +364,9 @@ for x, y in zip([1, 2, 3], [4, 5, 6]):
 ```
 
 결과: 1 4
+
      2 5
+     
      3 6
      
 ```python
@@ -353,5 +375,7 @@ for x, y, z in zip([1, 2, 3], [4, 5, 6], [7, 8, 9]):
 ```
 
 결과: 1 4 7
+
      2 5 8
+     
      3 6 9
