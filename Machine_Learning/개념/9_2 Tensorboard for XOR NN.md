@@ -9,7 +9,7 @@
 
 그동안은 열심히 출력을 통해 값의 변화를 확인했음
 
-#### 5 steps of using TensorBoard
+## 5 steps of using TensorBoard
 
 <img width="1000" alt="스크린샷 2020-12-12 오전 4 09 00" src="https://user-images.githubusercontent.com/62995632/101944270-c881a080-3c2f-11eb-97d6-c63fed10a5b4.png">
 
