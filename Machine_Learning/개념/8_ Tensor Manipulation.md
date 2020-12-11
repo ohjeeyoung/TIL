@@ -200,5 +200,16 @@ tf.argmax(x, axis=-1).eval()
 ## Reshape
 
 ```python
+t = np.array([[[0, 1, 2],
+               [3, 4, 5],
+               
+              [[6, 7, 8],
+               [9, 10, 11]]])
+t.shape
+```
 
+결과: (2, 2, 3)
+
+```python
+tf.reshape(t, shape=[-1, 3]).eval()
 ```
