@@ -38,3 +38,23 @@ ex. f에 대한 b의 미분이 1이므로 b의 값이 1 변할 때 f의 값도 1
 ![스크린샷 2020-12-12 오전 2 39 17](https://user-images.githubusercontent.com/62995632/101935999-47bca780-3c23-11eb-8e4c-4aeda12a746b.png)
 
 layer가 많아도 똑같이 뒤로 미분하면서 구할 수 있음
+
+#### Sigmoid
+
+<img width="1000" alt="스크린샷 2020-12-12 오전 2 41 31" src="https://user-images.githubusercontent.com/62995632/101936191-95391480-3c23-11eb-87c0-db9bf1770e9c.png">
+
+미분값만 알고 있으면 아무리 복잡한 식도 구할 수 있음
+
+#### Back propagation in TensorFlow(TensorBoard)
+
+<img width="1000" alt="스크린샷 2020-12-12 오전 2 43 13" src="https://user-images.githubusercontent.com/62995632/101936545-05e03100-3c24-11eb-8ba9-8dd8cb2e8017.png">
+
+<img width="1000" alt="스크린샷 2020-12-12 오전 2 44 15" src="https://user-images.githubusercontent.com/62995632/101936548-0678c780-3c24-11eb-8d9e-1424debf52e5.png">
+
+```python
+hypothesis = tf.sigmoid(tf.matmul(L2, W2) + b2)
+# cost function
+cost = -tf.reduce_mean(Y*tf.log(hypothesis) + (1-Y)*tf.log(1-hypothesis))
+```
+
+각각을 그래프로 만든 이유는 tensorflow가 미분을 하기 위해서(backpropagation)
