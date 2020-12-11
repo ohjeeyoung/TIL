@@ -58,3 +58,5 @@ cost = -tf.reduce_mean(Y*tf.log(hypothesis) + (1-Y)*tf.log(1-hypothesis))
 ```
 
 각각을 그래프로 만든 이유는 tensorflow가 미분을 하기 위해서(backpropagation)
+
+tensorflow를 이용하면 미분을 직접하지 않아도 됨
