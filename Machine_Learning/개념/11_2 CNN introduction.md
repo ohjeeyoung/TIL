@@ -1,4 +1,4 @@
-## Max pooling and others
+# Max pooling and others
 
 ## Pooling layer(sampling)
 <img width="1000" alt="스크린샷 2020-12-13 오전 6 02 01" src="https://user-images.githubusercontent.com/62995632/101994815-cfc8ad00-3d08-11eb-86df-27b841a8aee2.png">
