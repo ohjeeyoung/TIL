@@ -51,7 +51,7 @@ w는 같은 값을 갖고 점차적으로 다른 이미지들도 확인
 
 <img width="1000" alt="스크린샷 2020-12-13 오전 5 41 47" src="https://user-images.githubusercontent.com/62995632/101994451-e9b4c080-3d05-11eb-9f2e-3c2b0d7c63da.png">
 
-옆으로 한칸씩 움직여서(stride) 5*5가 됨
+옆으로 한칸씩 움직여서(stride) 5x5가 됨
 
 stride 크기만큼 옆으로 움직임
 
@@ -73,7 +73,7 @@ stride가 클수록 정보를 잃어버리기 쉬움
 
 <img width="1000" alt="스크린샷 2020-12-13 오전 5 47 49" src="https://user-images.githubusercontent.com/62995632/101994583-c0e0fb00-3d06-11eb-8517-bb003d572828.png">
 
-결과: 7*7 output
+결과: 7x7 output
 
 padding: 테두리에다가 0을 두르는 가상의 값이 있다고 생각함
 
@@ -98,4 +98,4 @@ activation maps(28, 28, 6(filter의 개수))
 
 #### How many weight variables? How to set them?
 
-앞의 예시에서는 빨간색은 5*5*3*6 weight의 개수, 노란색은 5*5*6*10번 사용
+앞의 예시에서는 빨간색은 5x5x3x6 weight의 개수, 노란색은 5x5x6x10번 사용
