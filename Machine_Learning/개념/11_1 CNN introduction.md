@@ -82,7 +82,7 @@ padding: 테두리에다가 0을 두르는 가상의 값이 있다고 생각함
 
 <img width="1000" alt="스크린샷 2020-12-13 오전 5 48 50" src="https://user-images.githubusercontent.com/62995632/101994629-27feaf80-3d07-11eb-8920-96ca289f2c39.png">
 
-padding을 사용해 입력의 이미지(7*7)와 출력의 이미지(7*7) size가 같아지는 것을 일반적으로 사용함
+padding을 사용해 입력의 이미지(7x7)와 출력의 이미지(7x7) size가 같아지는 것을 일반적으로 사용함
 
 ### Swiping the entire image
 
