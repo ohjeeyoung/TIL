@@ -76,7 +76,7 @@ train = optimizer.minimize(loss)
 
 fully connected를 1회 수행한 뒤 y 값 구함
 
-y_dim = 
+y_dim = 1
 
 #### Training and Results
 
