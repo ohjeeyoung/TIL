@@ -22,8 +22,6 @@ input_dim = 5(open, high, low, volume, close), seq_len = 7(7일동안의 데이�
 
 <img width="1000" alt="스크린샷 2020-12-14 오전 4 09 14" src="https://user-images.githubusercontent.com/62995632/102021284-247c2e80-3dc2-11eb-94d6-916bcf4d62b7.png">
 
-<img width="1000" alt="스크린샷 2020-12-14 오전 4 13 35" src="https://user-images.githubusercontent.com/62995632/102021383-c0a63580-3dc2-11eb-9b76-ea917d1cf45a.png">
-
 ```python
 timesteps = seq_length = 7
 data_dim = 5
@@ -48,3 +46,71 @@ for i in range(0, len(y) - seq_length):
 
 #### Training and test datasets
 
+```python
+# split to train and testing
+train_size = int(len(dataY) * 0.7)
+test_size = len(dataY) - train_size
+trainX, testX = np.array(dataX[0:train_size]), np.array(dataX[train_size:len(dataX)])
+trainY, testY = np.array(dataY[0:train_size]), np.array(dataY[train_size:len(dataY)])
+
+# input placeholders
+X = tf.placeholder(tf.float32, [None, seq_length, data_dim])
+Y = tf.placeholder(tf.float32, [None, 1])
+```
+
+#### LSTM and Loss
+
+```python
+cell = tf.contrib.rnn.BasicLSTMCell(num_units=hidden_dim, state_is_tupe=True)
+outputs, _states = tf.nn.dynamic_rnn(cell, X, dtype=tf.float32)
+Y_pred = tf.contrib.layers.fully_connected(
+    outputs[:, -1], output_dim, activation_fn=None)
+    # We use the last cell's output
+
+# cost/loss
+loss = tf.reduce_sum(tf.square(Y_pred - Y)) # sum of the squares
+# optimizer
+optimizer = tf.train.AdamOptimizer(0.01)
+train = optimizer.minimize(loss)
+```
+
+fully connected를 1회 수행한 뒤 y 값 구함
+
+y_dim = 
+
+#### Training and Results
+
+```python
+sess = tf.Session()
+sess.run(tf.global_variables_initializer())
+
+for i in range(1000):
+    _, l = sess.run([train, loss], feed_dict={X: trainX. Y: trainY})
+    print(i, l)
+
+
+testPredict = sess.run(Y_pred, feed_dict={X: testX})
+
+import matplotlib.pyplot as plt
+plt.plot(testY)
+plt.plot(testPredict)
+plt.show()
+```
+
+학습이 끝나면 y 값이 무엇일지 예측 -> 화면에다가 plot
+
+예측과 결과가 거의 다 일치한다.
+
+#### Exercise
+
+- Implement stock prediction using linear regression only
+- Improve results using more features such as keywords and/or sentiments in top news
+
+#### Other RNN applications
+
+- Language Modeling
+- Speech Recognition
+- Machine Translation
+- Conversation Modeling/Question Answering
+- Image/Video Captioning
+- Image/Music/Dance Generation
