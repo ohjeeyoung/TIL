@@ -69,8 +69,6 @@ Request의 종류
 
 HTML(Hyper Text Markup Language)
 
-> 특별한 문서
-
 Hyper Text = Link
 (Link에 따라 자유롭게 페이지를 이동할 수 있음 -> 정보를 받아들이는 수순을 다르게 만들어줌)
 
