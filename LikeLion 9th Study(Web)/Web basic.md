@@ -129,3 +129,13 @@ ol>li*4
 #### 결과
 
 <img width="1024" alt="나를 소개해요!" src="https://user-images.githubusercontent.com/62995632/105047077-3d58bd80-5aad-11eb-8fef-5c836a0dbad5.png">
+
+## Bootstrap
+> CSS/JavaScript 기반 웹 프레임워크
+
++ 웹 프레임워크: '웹을 만드는 재료들의 모음' 정도로 생각
+
+- 공짜!
+- 반응형 웹 지원(자동화면조정)
+- 브라우저 호환성
+
