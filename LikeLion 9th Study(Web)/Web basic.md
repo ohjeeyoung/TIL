@@ -113,7 +113,17 @@ Hyper Text = Link
 
 form: 사용자로부터 입력값을 받아들이는 태그 -> <form action="전송받을 대상"> 전송받을 대상에게 내용을 전달해준다.
 
-ol 태그 안에 li가 4개 생긴다
+ol(ordered list) 태그 안에 li가 4개 생긴다
 ```html
 ol>li*4
 ```
+위의 코드를 치고 tab
+
+#### 코드 
+
+<img width="670" alt="스크린샷 2021-01-19 오후 11 19 07" src="https://user-images.githubusercontent.com/62995632/105046775-d9ce9000-5aac-11eb-9599-a30648d4ee62.png">
+<img width="670" alt="스크린샷 2021-01-19 오후 11 19 29" src="https://user-images.githubusercontent.com/62995632/105046779-da672680-5aac-11eb-9037-fd842fbc9661.png">
+
+#### 결과
+
+<img width="1024" alt="나를 소개해요!" src="https://user-images.githubusercontent.com/62995632/105047077-3d58bd80-5aad-11eb-8fef-5c836a0dbad5.png">
