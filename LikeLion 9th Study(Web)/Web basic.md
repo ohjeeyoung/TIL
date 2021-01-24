@@ -251,4 +251,4 @@ jquery CDN도 따로 넣어줄 것 -> https://code.jquery.com/
 
 #### 결과
 
-<img width="1024" alt="나를 소개해요!" src="https://user-images.githubusercontent.com/62995632/105630890-e7aa5980-5e8e-11eb-84fd-f94fb041d6e4.png">
+<img width="1024" alt="나를 소개해요!" src="https://user-images.githubusercontent.com/62995632/105630989-58517600-5e8f-11eb-9362-48ab705507d7.png">
