@@ -252,3 +252,12 @@ jquery CDN도 따로 넣어줄 것 -> https://code.jquery.com/
 #### 결과
 
 <img width="1024" alt="나를 소개해요!" src="https://user-images.githubusercontent.com/62995632/105630989-58517600-5e8f-11eb-9362-48ab705507d7.png">
+
+## Github 배포
+
+#### Github: 3+1가지의 기능
+
+1. Code 저장 기능
+2. Undo 기능
+3. 협업기능
++ Web Hosting 기능(Easy, Free)
