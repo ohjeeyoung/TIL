@@ -139,3 +139,112 @@ ol>li*4
 - 반응형 웹 지원(자동화면조정)
 - 브라우저 호환성
 
+- 딱 보면 티 남
+- 성능이 다소 떨어짐
+
+header에 부트스트랩 CDN 넣어줄 것
+
+jquery CDN도 따로 넣어줄 것 -> https://code.jquery.com/
+
+#### 콘테이너
+
+> 여백을 만들어 주는 것
+
+#### 실습코드
+
+```html
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나를 소개해요!</title>
+</head>
+<body>
+    <div class="container">
+        <br>
+        <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="1.html">유년기</a></li>
+            <li role="presentation"><a href="2.html">질풍노도의 시기</a></li>
+            <li role="presentation"><a href="3.html">방황기</a></li>
+            <li role="presentation"><a href="4.html">지금</a></li>
+          </ul>
+    <h1>오지영을 소개합니다</h1>
+    <h2>오지영의 소개해요</h2><br>
+
+    <form action="전송받을 대상">
+        아이디: <input type="text" name="id">
+        비밀번호: <input type="password" name="pw">
+        <div class="form-group">
+          <label for="exampleInputEmail1">이메일 주소</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" placeholder="이메일을 입력하세요">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">암호</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="암호">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputFile">파일 업로드</label>
+          <input type="file" id="exampleInputFile">
+          <p class="help-block">여기에 블록레벨 도움말 예제</p>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> 입력을 기억합니다
+          </label>
+        </div>
+        <input type="submit" class="btn btn-primary"></button>
+      </form>
+    <br>
+    <img src="IMG.jpg" width=300>
+    <br>
+
+    <form action="전송받을 대상">
+        <h2>나의 일기장</h2>
+        제목: <input type="text" name="diarytitle"><br>
+        <select>
+            <option value="goodday">좋은날</option>
+            <option value="sadday">슬픈날</option>
+            <option value="soso">그저그런날</option>
+        </select> <br>
+        내용: <br>
+        <textarea cols="30" rows="20"></textarea>
+        <br>
+        <input type="submit">
+    </form>
+    <div class="progress">
+        <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+          <span class="sr-only">40% Complete (success)</span>
+        </div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+          <span class="sr-only">20% Complete</span>
+        </div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+          <span class="sr-only">60% Complete (warning)</span>
+        </div>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+          <span class="sr-only">80% Complete (danger)</span>
+        </div>
+      </div>
+</div>
+</body>
+</html>
+```
